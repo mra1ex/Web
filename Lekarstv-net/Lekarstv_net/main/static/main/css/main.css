@@ -1,0 +1,55 @@
+body {
+    font-family: Montserrat, sans-serif;
+
+    position: relative;
+    width: 1660px;
+    height: 1440px;
+
+    background: #F5F6F6;
+    border: #000000;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    position: absolute;
+    width: 372px;
+    height: 117.28px;
+    left: 180px;
+    top: 63px;
+}
+
+.prf{
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    left: 1618px;
+    top: 79px;
+}
+
+.menu{
+    display: flex;
+    list-style: none;
+    position: absolute;
+    width: 326px;
+    height: 39px;
+    left: 1278px;
+    top: 69px;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: right;
+
+
+}
+
+.menu li a{
+    text-decoration: none;
+    color: #000000;
+}
+
+

@@ -1,0 +1,41 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+    <title>{% block title %}{% endblock %}</title>
+    {% block link %}{% endblock %}
+</head>
+<body>
+
+<!--Header-->
+
+<header class="header">
+    <a href="{% url 'general' %}">
+        <img src="{% static 'main/img/Логотип.png' %}" class="logo">
+    </a>
+
+    <a>
+        <img src="{% static 'main/img/Аватар.png' %}" class="prf">
+    </a>
+
+    <nav>
+        <ul class="menu">
+            <li><a href="{% url 'singin' %}">Вход</a></li>
+            <a>|</a>
+            <li><a href="{% url 'singup' %}">Регистрация</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!--End header-->
+
+<!--Fill-->
+
+
+{% block content %}
+{% endblock %}
+</body>
+</html>

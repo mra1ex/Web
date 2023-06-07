@@ -1,0 +1,58 @@
+{% extends 'main/layout.html' %}
+
+{% block link %}
+      <link rel="stylesheet" href="../../static/main/css/singup.css">
+{% endblock %}
+
+{% block title %}Регистрация{% endblock %}
+
+{% block content %}
+  <div class="container">
+  <h1>Регистрация</h1>
+    <form class="row" method="post" action="" id="add-form">
+      {% csrf_token %}
+      {{ form }}
+      {{ form.name }}<br>
+      {{ form.surname }}<br>
+      {{ form.mail }}<br>
+      {{ form.password }}<br>
+      <span>{{ error }}</span>
+
+      <div class="group">
+        <label for="fname">Имя</label>
+        <input type="text" class='form-control' id="fname" data-max-length = "20" data-min-length = "4">
+      </div>
+
+      <div class="group">
+        <label for="lname">Фамилия</label>
+        <div class="w-100"></div>
+        <input type="text" class='form-control' id="lname" data-max-length = "20" data-min-length = "4">
+      </div>
+
+      <div class="group">
+        <label for="exampleInputEmail" class="form-label">Электронная почта</label>
+        <div class="w-100"></div>
+        <input type="email" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp" name="email">
+      </div>
+
+      <div class="group">
+        <label  class="form-label">Пароль</label>
+        <input type="password" class="form-control" id="2" data-max-length = "20" data-min-length = "6">
+      </div>
+
+      <div class="group">
+        <label class="form-label">Подтвердить</label>
+
+        <input type="password" class="form-control" id="3" data-max-length = "20" data-min-length = "6">
+      </div>
+
+        <button type="submit" class="btn">Зарегистрироваться</button>
+    </form>
+  </div>
+
+<!--End Fill-->
+<script src="../../static/main/js/singup.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+{% endblock %}
+

@@ -1,0 +1,30 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+{% block link %}
+        <link rel="stylesheet" href="../../static/main/css/general.css">
+{% endblock %}
+
+{% block title %}Главная страница{% endblock %}
+
+{% block content %}
+<!--End header-->
+
+<!--Fill-->
+
+<div class="inventory">
+    <nav class="search">
+        <button type="button" class="btn">Поиск</button>
+    </nav>
+    <button class='button'>Общий список</button>
+    <h1>История поиска</h1>
+    <div class="w-100"></div>
+    <button class='btn'><img src="{% static 'main/img/strepsils.png' %}"></button>
+    <a>Комбинированное антисептическое
+        средство для местного применения.
+        Оказывает противовоспалительное,
+        анальгезирующее и
+        местноанестезирующее действие.</a>
+
+</div>
+<!--End Fill-->
+{% endblock %}
