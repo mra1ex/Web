@@ -12,19 +12,87 @@
 <!--Fill-->
 
 <div class="inventory">
-    <nav class="search">
-        <button type="button" class="btn">Поиск</button>
-    </nav>
+    <div class="search">
+        <div class="icon"><img src="{% static 'main/img/Лупа.png' %}"></div>
+        <div class="input">
+            <input type="text" placeholder="Введите название лекарства" id="MySearch">
+<!--        <button type="button" class="btn">Поиск</button>-->
+        </div>
+    </div>
     <button class='button'>Общий список</button>
     <h1>История поиска</h1>
-    <div class="w-100"></div>
+<!--    <div class="w-100"></div>-->
     <button class='btn'><img src="{% static 'main/img/strepsils.png' %}"></button>
-    <a>Комбинированное антисептическое
+        <a>Комбинированное антисептическое
         средство для местного применения.
         Оказывает противовоспалительное,
         анальгезирующее и
         местноанестезирующее действие.</a>
 
+    <button class='btn1'><img src="{% static 'main/img/azitromicin.png' %}"></button>
+        <b>Антибактериальный препарат широкого
+        спектра действия из группы макролидов-
+        азалидов. Действует на вне и внутриклеточно
+        расположенных возбудителей.</b>
+
+    <button class='btn2'><img src="{% static 'main/img/nurofen.png' %}"></button>
+        <c>Оказывает противовоспалительное,
+        анальгезирующее и жаропонижающее
+        действие. Подавляет агрегацию
+        тромбоцитов.</c>
+
+    <button class='btn3'><img src="{% static 'main/img/nimesil.png' %}"></button>
+        <d>Нестероидный противовоспалительный
+        препарат. Оказывает противовоспалительное,
+        обезболивающее и жаропонижающее действие.</d>
+
+    <button class='btn4'><img src="{% static 'main/img/cardiomagnil.png' %}"></button>
+        <e>В основе ацетилсалициловой кислоты лежит
+        ингибирование фермента,
+        в результате чего блокируется синтез
+        тромбоксана и подавляется
+        агрегация тромбоцитов.</e>
+
+    <button class='btn5'><img src="{% static 'main/img/spazmalgon.png' %}"></button>
+        <f>Обладает болеутоляющим, жаропони-
+        жающим и противовоспалительным действиями,
+        влияет на гладкую мускулатуру внутренних органов
+        и вызывает ее расслабление.</f>
+
+    <button class='btn6'><img src="{% static 'main/img/flowox.png' %}"></button>
+        <g>Антидепрессант группы селективных ингибиторов
+        обратного захвата серотонина. Избирательно блокирует
+        обратный нейрональный захват серотонина.</g>
+
+
 </div>
-<!--End Fill-->
+
+<!--<div class="likes" id="like_count">Likes: ?</div>-->
+<!--<div id="like_form">-->
+<!--    <form method="post" class="form">-->
+<!--        {% csrf_token %}-->
+<!--        <div>{{ form.non_field_errors }}</div>-->
+<!--        {% for f in form %}-->
+<!--            <p><label for="{{ f.id_for_label }}">{{ f.label }}: </label>{{ f }}</p>-->
+<!--            <div>{{ f.errors }}</div>-->
+<!--        {% endfor %}-->
+<!--        <button type="submit"><img src="{% static 'main/img/heart.png' %}"></button>-->
+<!--    </form>-->
+<!--</div>-->
+
+<!--<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>-->
+<!--<script>-->
+<!--  (function getLikes() {-->
+<!--    $.ajax({-->
+<!--      url: '/',-->
+<!--      type: 'get',-->
+<!--      dataType: 'json',-->
+<!--      success: function(response) {-->
+<!--        let res = '<p>Likes: ' + response.like_amount + '</p>';-->
+<!--        $('#like_count').html(res);-->
+<!--        setTimeout(getLikes, 2500);-->
+<!--      }-->
+<!--    });-->
+<!--  })();-->
+<!--</script>-->
 {% endblock %}

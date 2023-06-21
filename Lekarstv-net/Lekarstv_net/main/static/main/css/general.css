@@ -1,21 +1,55 @@
-
-.inventory .search{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: absolute;
+* {
+    box-sizing: border-box;
 }
-.inventory .search .btn{
-    position: absolute;
+
+.search{
+    position: relative;
     width: 1160px;
     height: 39px;
     left: 180px;
     top: 227px;
-
+    /*overflow: hidden;*/
+/*display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: space-between;*/
     background: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 51px;
+    z-index: 999;
 }
+
+.search .icon{
+    position: absolute;
+    top: 0;
+    left: 5px;
+    width: 39px;
+    height: 39px;
+    border-radius: 51px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 999;
+    cursor: pointer;
+
+}
+
+
+.inventory .input input{
+    position: relative;
+    width: 1160px;
+    height: 39px;
+    padding: 0 50px 0 40px;
+    border-radius: 51px;
+    font-size: 16px;
+    /*box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);*/
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    border: none;
+
+
+}
+
 
 .inventory .button{
     position: absolute;
@@ -46,7 +80,7 @@
 
     color: #000000;
 }
-
+/*1*/
 .inventory .btn{
     box-sizing: border-box;
 
@@ -61,13 +95,7 @@
     box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.5);
     border-radius: 30px;
 }
-.str{
-    position: absolute;
-    width: 350px;
-    height: 250px;
-    left: 40px;
-    top: 12px;
-}
+
 .inventory a{
     position: absolute;
     width: 307.32px;
@@ -79,8 +107,211 @@
     font-weight: 500;
     font-size: 15px;
     line-height: 18px;
+}
+/*2*/
+.inventory .btn1{
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 405.26px;
+    height: 385px;
+    left: 736px;
+    top: 425px;
+
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+}
+
+.inventory b{
+    position: absolute;
+    width: 307.32px;
+    height: 95.69px;
+    left: 786px;
+    top: 713px;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+}
+/*3*/
+.inventory .btn2{
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 405.26px;
+    height: 385px;
+    left: 1295px;
+    top: 425px;
+
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+}
+
+.inventory c{
+    position: absolute;
+    width: 307.32px;
+    height: 95.69px;
+    left: 1345px;
+    top: 713px;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+}
+/*4*/
+.inventory .btn3{
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 405.26px;
+    height: 385px;
+    left: 180px;
+    top: 920px;
+
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+}
+
+.inventory d{
+    position: absolute;
+    width: 307.32px;
+    height: 95.69px;
+    left: 230px;
+    top: 1208px;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+}
+/*5*/
+.inventory .btn4{
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 405.26px;
+    height: 385px;
+    left: 736px;
+    top: 920px;
+
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+}
+
+.inventory e{
+    position: absolute;
+    width: 307.32px;
+    height: 95.69px;
+    left: 786px;
+    top: 1208px;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+.inventory .btn5{
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 405.26px;
+    height: 385px;
+    left: 1295px;
+    top: 920px;
+
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+}
+
+.inventory f{
+    position: absolute;
+    width: 307.32px;
+    height: 95.69px;
+    left: 1345px;
+    top: 1208px;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+.inventory .btn6{
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 405.26px;
+    height: 385px;
+    left: 180px;
+    top: 1415px;
+
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+}
+
+.inventory g{
+    position: absolute;
+    width: 307.32px;
+    height: 95.69px;
+    left: 230px;
+    top: 1703px;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+}
 
 
+/*.like_form{*/
+/*    position: absolute;*/
+/*    width: 372px;*/
+/*    height: 117.28px;*/
+/*    left: 180px;*/
+/*    top: 63px;*/
+/*}*/
+
+.form button{
+
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    left: 530px;
+    top: 445px;
+
+    background: #FFFFFF;
+
+}
+
+.likes{
+    position: absolute;
+    left: 450px;
+    top: 433px;
+}
+
+
+.form img{
+    position: absolute;
+    width: 45px;
+    left: -10px;
+    top: -10px;
+    outline: none;
+    background: #FFFFFF;
 }
 
 

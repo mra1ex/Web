@@ -1,10 +1,11 @@
-from .models import Peoples
-from django.forms import ModelForm, TextInput, EmailInput
+from .models import People, Like
+from django.forms import ModelForm, TextInput, EmailInput, PasswordInput
 
 
-class PeoplesForm(ModelForm):
+class PeopleForm(ModelForm):
     class Meta:
-        model = Peoples
+        model = People
+
         fields = ['name', 'surname', 'mail', 'password']
 
         widgets = {
@@ -20,10 +21,16 @@ class PeoplesForm(ModelForm):
                 'class': 'form-control',
                 'placeholder': 'Почта'
             }),
-            "password": TextInput(attrs={
+            "password": PasswordInput(attrs={
                 'class': 'form-control',
                 'placeholder': 'Пароль'
             })
 
 
         }
+
+
+class LikeForm(ModelForm):
+    class Meta:
+        model = Like
+        fields = []

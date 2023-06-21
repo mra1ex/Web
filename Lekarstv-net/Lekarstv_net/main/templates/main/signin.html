@@ -1,0 +1,46 @@
+{% extends 'main/layout.html' %}
+
+{% block link %}
+    <link rel="stylesheet" href="../../static/main/css/singin.css">
+{% endblock %}
+
+{% block title %}Вход{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <form method="post"  action='' class="form" id="add-form">
+            <h1>Вход</h1>
+            {% csrf_token %}
+            <div class="group">
+                {{ form.mail }}
+<!--                <label for="exampleInputEmail1" class="form-label">Электронная почта</label>-->
+<!--                <div class="w-100"></div>-->
+<!--                <input data-required="true" type="email" class="form-control"  id="exampleInputEmail1" aria-describedby="emailHelp">-->
+            </div>
+
+            <div class="error"><div class="error-label">{{ mail_error }}</div></div>
+            <div class="group">
+                {{ form.password }}
+<!--                <label for="exampleInputPassword1" class="form-label">Пароль</label>-->
+<!--                <div class="w-100"></div>-->
+<!--                <input data-min-length="8" type="password" class="form-control" id="exampleInputPassword1">-->
+            </div>
+
+            <div class="error"><div class="error-label">{{ password_error }}</div></div>
+            <button type="submit" class="btn btn-primary">Войти</button>
+        </form>
+    </div>
+
+    <!--End Fill-->
+
+    <!--Footer-->
+
+    <footer class="footer">
+        <ul class="reg">
+            <a>Нет учётной записи?&nbsp</a>
+            <li><a href="{% url 'signup' %}">Создайте </a></li>
+            <a>&nbspеё сейчас.</a>
+        </ul>
+    </footer>
+{% endblock %}
+
